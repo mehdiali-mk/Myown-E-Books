@@ -2,7 +2,7 @@
 
 ### Responsive Book Website
 
-Demo Link: <a>
+Demo Link: <a href="https://mehdiali-mk.github.io/Myown-E-Books/" target="_blank">Click Here</a>
 
 - Responsive E-Book Website Design Using HTML CSS & JavaScript
 - Contains animations when scrolling.
@@ -15,5 +15,5 @@ Demo Link: <a>
 
 Twitter: <a href="https://twitter.com/mehdiali_mk" target="_blank">Click Here</a>  
 LinkedIn: <a href="https://www.linkedin.com/in/mehdiali-mk/" target="_blank">Click Here</a>  
-Instagram: <a href="https://www.instagram.com/mehdiali_mk/" target="_blank">Click Here</a>
+Instagram: <a href="https://www.instagram.com/mehdiali_mk/" target="_blank">Click Here</a><br/>
 E-Mail: <a href="mailto:mehdialikadiwala@gmail.com">Click Here</a>
