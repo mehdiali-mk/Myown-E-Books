@@ -19,6 +19,24 @@ if (searchCloseEl) {
 
 /*=============== LOGIN ===============*/
 
+const loginButtonEl = document.getElementById("login-button"),
+  loginCloseEl = document.getElementById("login-close"),
+  loginContentEl = document.getElementById("login-content");
+
+/*==== SHOW MENU =====*/
+if (loginButtonEl) {
+  loginButtonEl.addEventListener("click", () => {
+    loginContentEl.classList.add("show-login");
+  });
+}
+
+/*==== HIDE MENU =====*/
+if (loginCloseEl) {
+  loginCloseEl.addEventListener("click", () => {
+    loginContentEl.classList.remove("show-login");
+  });
+}
+
 /*=============== ADD SHADOW HEADER ===============*/
 
 /*=============== HOME SWIPER ===============*/
