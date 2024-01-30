@@ -39,8 +39,34 @@ if (loginCloseEl) {
 
 /*=============== ADD SHADOW HEADER ===============*/
 
-/*=============== HOME SWIPER ===============*/
+const scrollHeader = () => {
+  const header = document.getElementById("header");
+  // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+  this.scrollY >= 50
+    ? header.classList.add("shadow-header")
+    : header.classList.remove("shadow-header");
+};
+window.addEventListener("scroll", scrollHeader);
 
+/*=============== HOME SWIPER ===============*/
+const swiperHome = new Swiper(".home__swiper", {
+  loop: true,
+  spaceBetween: -24,
+  grabCursor: true,
+  slidesPreView: "auto",
+  centeredSlides: "auto",
+
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    1220: {
+      spaceBetween: -32,
+    },
+  },
+});
 /*=============== FEATURED SWIPER ===============*/
 
 /*=============== NEW SWIPER ===============*/

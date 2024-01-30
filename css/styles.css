@@ -253,6 +253,10 @@ img {
 
 /* Add shadow header */
 
+.shadow-header {
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.1);
+}
+
 /* Active link */
 
 /*=============== SEARCH ===============*/
@@ -425,6 +429,12 @@ img {
   display: grid;
 }
 
+.home__swiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .home__article,
 .home__img {
   width: 220px;
@@ -433,6 +443,9 @@ img {
   -moz-transition: scale 0.4s;
   -ms-transition: scale 0.4s;
   -o-transition: scale 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home__article {
@@ -440,6 +453,11 @@ img {
 }
 
 /* Swiper class */
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+  scale: 1;
+}
 
 /*=============== BUTTON ===============*/
 .button {
@@ -461,7 +479,106 @@ img {
 
 /*=============== SERVICES ===============*/
 
+.services__container {
+  row-gap: 3rem;
+}
+
+.services__card {
+  text-align: center;
+}
+
+.services__card i {
+  display: block;
+  font-size: 3rem;
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.services__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.5rem;
+}
+
 /*=============== FEATURED ===============*/
+
+.featured__card {
+  width: 60%;
+  position: relative;
+  text-align: center;
+  background-color: var(--container-color);
+  padding: 2rem;
+  overflow: hidden;
+  border: 2px solid var(--border-color);
+  transition: border 0.4s, background-color 0.4s;
+  -webkit-transition: border 0.4s, background-color 0.4s;
+  -moz-transition: border 0.4s, background-color 0.4s;
+  -ms-transition: border 0.4s, background-color 0.4s;
+  -o-transition: border 0.4s, background-color 0.4s;
+}
+
+.featured__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.featured__image {
+  width: 150px;
+  margin: 0 auto 0.75rem;
+}
+
+.featured__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.featured__prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.featured__discount {
+  color: var(--title-color);
+  font-weight: 500;
+}
+
+.featured__price {
+  font-size: var(--small-font-size);
+  text-decoration: line-through;
+}
+
+.featured__card .button {
+  cursor: pointer;
+}
+
+.featured__actions {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+  position: absolute;
+  top: 2rem;
+  right: -1.5rem;
+  transition: right 0.4s;
+  -webkit-transition: right 0.4s;
+  -moz-transition: right 0.4s;
+  -ms-transition: right 0.4s;
+  -o-transition: right 0.4s;
+}
+
+.featured__actions button {
+  background: none;
+  font-size: 1.25rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.featured__card:hover .featured__actions {
+  right: 1.5rem;
+}
 
 /* Swiper class */
 
