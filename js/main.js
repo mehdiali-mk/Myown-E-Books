@@ -67,8 +67,27 @@ const swiperHome = new Swiper(".home__swiper", {
     },
   },
 });
-/*=============== FEATURED SWIPER ===============*/
 
+/*=============== FEATURED SWIPER ===============*/
+const swiperFeatured = new Swiper(".featured__swiper", {
+  loop: true,
+  spaceBetween: 16,
+  grabCursor: true,
+  slidesPreView: "auto",
+  centeredSlides: "auto",
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    1150: {
+      slidesPreView: 4,
+      centeredSlides: false,
+    },
+  },
+});
 /*=============== NEW SWIPER ===============*/
 
 /*=============== TESTIMONIAL SWIPER ===============*/
