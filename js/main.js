@@ -88,8 +88,19 @@ const swiperFeatured = new Swiper(".featured__swiper", {
     },
   },
 });
-/*=============== NEW SWIPER ===============*/
 
+/*=============== NEW SWIPER ===============*/
+const swiperNew = new Swiper(".new__swiper", {
+  loop: true,
+  spaceBetween: 16,
+  slidesPreView: "auto",
+
+  breakpoints: {
+    1150: {
+      slidesPreView: 3,
+    },
+  },
+});
 /*=============== TESTIMONIAL SWIPER ===============*/
 
 /*=============== SHOW SCROLL UP ===============*/
