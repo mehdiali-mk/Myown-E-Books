@@ -101,8 +101,22 @@ const swiperNew = new Swiper(".new__swiper", {
     },
   },
 });
-/*=============== TESTIMONIAL SWIPER ===============*/
 
+/*=============== TESTIMONIAL SWIPER ===============*/
+const swiperTestimonial = new Swiper(".testimonial__swiper", {
+  loop: true,
+  spaceBetween: 16,
+  grabCursor: true,
+  slidesPreView: "auto",
+  centeredSlides: "auto",
+
+  breakpoints: {
+    1150: {
+      slidesPreView: 3,
+      centeredSlides: false,
+    },
+  },
+});
 /*=============== SHOW SCROLL UP ===============*/
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
